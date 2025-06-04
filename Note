@@ -2,3 +2,4 @@
 2. If folder has template.tsx, then 'children' in layout is template.tsx and 'children' in template is page.tsx
 3. If folder has no template.tsx, then 'children' in layout is page.tsx 
 4. Layout and Template is on the same level, both of them will be shown on pages of children folders. 
+5. After re-routing, the Layout retains the state of user's operation, but the template reverts to its default value. 
