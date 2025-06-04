@@ -1,18 +1,4 @@
-1. Layout takes effect for the current folder and children folders. 
-
-2. 'children' here is for the pages (page.tsx) or nested layouts that will be rendered within this layout.
-
-export default function DashboardLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
-  return (
-    <html lang="en">
-      <body>
-        <h1>Root Layout</h1>
-        <main>{children}</main>
-      </body>
-    </html>
-  )
-}
+1. Layout > Template > page.tsx 
+2. If folder has template.tsx, then 'children' in layout is template.tsx and 'children' in template is page.tsx
+3. If folder has no template.tsx, then 'children' in layout is page.tsx 
+4. Layout and Template is on the same level, both of them will be shown on pages of children folders. 
