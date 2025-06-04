@@ -1,1 +1,18 @@
-Layout takes effect for the current folder and children folders. 
+1. Layout takes effect for the current folder and children folders. 
+
+2. 'children' here is for the pages (page.tsx) or nested layouts that will be rendered within this layout.
+
+export default function DashboardLayout({
+  children,
+}: {
+  children: React.ReactNode
+}) {
+  return (
+    <html lang="en">
+      <body>
+        <h1>Root Layout</h1>
+        <main>{children}</main>
+      </body>
+    </html>
+  )
+}
