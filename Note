@@ -1,0 +1,10 @@
+Root Path (/)
+Handled by: app/page.js
+
+  Dashboard Path (/dashboard)
+  Handled by: app/dashboard/page.js
+
+    Dashboard Settings Path (/dashboard/settings)
+    Handled by: app/dashboard/settings/page.js
+
+page.js will be automatically routed when entering directory name.
